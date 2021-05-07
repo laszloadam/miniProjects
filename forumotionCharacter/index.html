@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Életút</title>
+    <style>
+        input {
+            display:block;
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainStory">
+        <form>
+            <input id="characterQuote" type="text"placeholder="Karakterre jellemző idézet">
+
+            <input id="characterAvatar" type="text"placeholder="Avatár kép">
+            <input id="characterName" type="text"placeholder="Név">
+            <input id="characterAge" type="text"placeholder="Kor">
+            <input id="characterGender" type="text" placeholder="Nem">
+            <input id="characterClass" type="text" placeholder="Faj">
+            <input id="characterRank" type="text" placeholder="Rang">
+            <input id="characterGroup" type="text" placeholder="Csoport">
+            <input id="characterProfession" type="text" placeholder="Foglalkozás">
+
+            <input id="description" type="text" placeholder="Megjelenés">
+            <input id="anotherFormText" type="text" placeholder="Másik alak">
+            <input id="anotherFormAvatar"type="text" placeholder="másikavatar kép">
+            
+            <input id="personality" type="text" placeholder="Személyiség">
+            <input id="lifeWay" type="text" placeholder="Életút">
+            <input id="ability" type="text" placeholder="Képesség">
+            <input id="skills" type="text" placeholder="Képzettség">
+            <input id="other" type="text" placeholder="Egyéb">
+
+            <div style="padding:5px;border: 2px solid #FFFFFF" id="bekuldes" onclick="submit()">Beküldés</div>
+        </form>
+        <!-- https://blackmoonfrpg.hungarianforum.com/t1-karakterlap-minta -->
+        <!-- <div id="idezet"></div>
+        <div id="characterData">
+            <img src="" alt="" id="mainAvatar">
+            <div id="characterName"></div>
+            <div id="characterAge"></div>
+            <div id="characterGender"></div>
+            <div id="characterClass"></div>
+            <div id="characterRank"></div>
+            <div id="characterGroup"></div>
+            <div id="characterProfession"></div>
+        </div>
+        <div id="description"></div>
+        <div id="otherForm">
+            <div id="anotherFormText"></div>
+            <div id="anotherFormAvatar"></div>
+        </div>
+        <div id="personality"></div>
+        <div id="lifeWay"></div>
+        <div id="ability"></div>
+        <div id="skills"></div>
+        <div id="other"></div> -->
+    </div>
+    <div id="done">
+    </div>
+    <script>
+        let done = document.getElementById('done');
+        
+        function submit(){
+            let characterquote = document.getElementById('characterQuote').value;
+
+            let characterAvatar = document.getElementById('characterName').value;
+            let characterName = document.getElementById('characterName').value;
+            let characterAge = document.getElementById('characterAge').value;
+            let characterGender = document.getElementById('characterGender').value;
+            let characterClass = document.getElementById('characterClass').value;
+            let characterRank = document.getElementById('characterRank').value;
+            let characterGroup = document.getElementById('characterGroup').value;
+            let characterProfession = document.getElementById('characterProfession').value;
+            let description = document.getElementById('description').value;
+            let anotherFormText = document.getElementById('anotherFormText').value;
+            let anotherFormAvatar = document.getElementById('anotherFormAvatar').value;
+            let personality = document.getElementById('personality').value;
+            let lifeWay = document.getElementById('lifeWay').value;
+            let ability = document.getElementById('ability').value;
+            let skills = document.getElementById('skills').value;
+            let other = document.getElementById('other').value;
+            done.innerHTML = '<h1>Karakter Adatai</h1>'+characterName+'<br>'+characterAge+'<br>'+characterGender+'<br>'+characterClass+'<br>'+ characterRank+'<br>'+characterGroup+'<br>'+characterProfession+'<br>'+description+'<br>'+anotherFormAvatar+'<br>'+personality+'<br>'+lifeWay+'<br>'+ability+'<br>'+skills+'<br>'+other+'<br>';
+        }
+    </script>
+</body>
+</html>
