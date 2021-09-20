@@ -1,0 +1,45 @@
+.inputGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px
+}
+input {
+    display:block;
+    margin-bottom:10px;
+}
+#bekuldes {
+    padding:5px;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+.charSheets > div {
+    margin-bottom: 20px;
+}
+.fields {
+    min-height:20px;
+    width: 100%;
+    border:1px solid #000000;
+    background-color: rgb(143, 77, 15);
+}
+#characterData {
+    display: flex
+}
+.charSheetLeft, .charSheetRight {
+    width: 100%;
+}
+#otherForm {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px
+}
+
+@media screen and (max-width:700px){
+    .inputGrid {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:430px){
+    .inputGrid {
+        grid-template-columns: auto;
+    }
+}
